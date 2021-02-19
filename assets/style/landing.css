@@ -1,0 +1,25 @@
+.landing {
+  height: 100vh;
+  background-size: 100vw;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundChange 10s linear infinite;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url("/assets/images/02.jpeg");
+  }
+  33% {
+    background-image: url("/assets/images/01.jpg");
+  }
+  66% {
+    background-image: url("/assets/images/02.jpg");
+  }
+  99% {
+    background-image: url("...");
+  }
+}

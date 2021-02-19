@@ -1,0 +1,49 @@
+.ab {
+  max-width: 80%;
+  height: auto;
+  padding-right: 20px;
+  float: right;
+}
+
+.landing {
+  color: black;
+  font-size: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see {
+  width: 90px;
+  font-size: 17px;
+  height: 40px;
+}
+
+main {
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+}
+#divider {
+  height: 2px;
+  width: 80%;
+
+  background: linear-gradient(
+    90deg,
+    hsl(0, 0%, 20%),
+    hsl(0, 0%, 70%),
+    hsl(0, 0%, 20%)
+  );
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
