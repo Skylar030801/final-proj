@@ -44,6 +44,17 @@ iframe {
 
 .benefits {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   padding-bottom: 40px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 }
