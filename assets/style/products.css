@@ -1,9 +1,17 @@
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 10%;
+  flex-direction: column;
+}
 
-  padding: 50px;
+.view {
+  margin: 4% 10%;
+  padding-top: 4%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .grid-item {
@@ -16,4 +24,55 @@
 
 .grid-item:hover {
   color: gray;
+}
+
+.cederwood {
+  height: 200px;
+}
+
+.lemon {
+  height: 200px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 20px;
+}
+
+.pagination {
+  display: inline-block;
+  justify-content: center;
+  display: flex;
+  margin: 4% 10%;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 2px solid black;
+  margin: 0 4px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: mediumaquamarine;
+}
+
+.bamboo {
+  height: 200px;
+}
+
+.rainstone {
+  height: 200px;
+  margin-top: 25px;
+}
+
+.aroma {
+  height: 230px;
+}
+
+.lantern {
+  height: 200px;
 }

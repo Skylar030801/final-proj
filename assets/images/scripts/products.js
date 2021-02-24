@@ -1,19 +1,15 @@
 // Get the elements with class="column"
-var elements = document.getElementsByClassName("grid-item");
+var elements = document.getElementsByClassName("grid-container")[0];
 
 // Declare a loop variable
 var i;
 
 // List View
 function listView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "100%";
-  }
+  elements.style.display = "flex";
 }
 
 // Grid View
 function gridView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
-  }
+  elements.style.display = "grid";
 }
