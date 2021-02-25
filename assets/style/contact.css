@@ -24,43 +24,8 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-top: 10vh;
-}
-
 #contact {
   font-size: 35px;
-}
-
-.info {
-  max-width: 80%;
-  height: auto;
-  padding-right: 20px;
-  float: right;
-}
-
-.container {
-  color: neon greenyellow;
-  font-size: 30px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.div {
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  outline: 0;
-  padding: 0;
-  margin: 20px 0px;
-  border: 0;
 }
 
 .icon-bar {
@@ -84,4 +49,38 @@ input[type="submit"]:hover {
 .fa-youtube {
   background: red;
   color: white;
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  padding: 10% 5%;
+  margin-top: -80px;
+}
+
+.info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 3%;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  margin: 0 auto;
+  align-content: center;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
 }

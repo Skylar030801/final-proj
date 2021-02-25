@@ -1,6 +1,6 @@
 .landing {
   height: 100vh;
-  background-size: 100vw;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -11,15 +11,15 @@
 
 @keyframes backgroundChange {
   0% {
-    background-image: url("/assets/images/02.jpeg");
+    background-image: url("../images/back1.png");
   }
   33% {
-    background-image: url("/assets/images/01.jpg");
+    background-image: url("../images/back2.png");
   }
   66% {
-    background-image: url("/assets/images/02.jpg");
+    background-image: url("..//images/back3.png");
   }
   99% {
-    background-image: url("...");
+    background-image: url("../images/back4\ \(1\).png");
   }
 }
