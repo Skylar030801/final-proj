@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/nav.css" />
     <link rel="stylesheet" href="./assets/style/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Navigation Section -->
@@ -20,10 +24,15 @@
     </nav>
     <h1>BERGAMOT OIL</h1>
     <div class="popup" id="popup-1">
+      <img src="./assets/images/bergamot.jpeg" alt="berg" class="berg" />
       <div class="info">
+        <h2>R189.99</h2>
+        <button class="cart" onclick="add()">ADD TO CART</button>
+        <label for="cart" id="amount">0</label>
+        <i class="fa fa-shopping-cart" id="cart"></i>
         <p>
           Sunlight in a bottle, this zesty fresh oil is expressed from the
-          citrus fruit’s peel. Balancing, uplifting and restorative, ideal for
+          citrus fruit’s peel.Balancing, uplifting and restorative, ideal for
           breathing directly from the bottle for some on the go motivation. The
           Bergamot tree grows yellow-green fruits with the taste being like the
           combination of orange and lime. Wake up wonderful, applying onto
@@ -32,10 +41,7 @@
           apply to your lotion for cleansed and nourished skin.
         </p>
       </div>
-
-      <div class="content">
-        <img src="./assets/images/bergamot.jpeg" alt="berg" class="berg" />
-      </div>
     </div>
+    <script src="./assets/images/scripts/product.js"></script>
   </body>
 </html>

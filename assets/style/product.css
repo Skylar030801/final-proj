@@ -1,18 +1,16 @@
-.content {
+.popup {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
+  flex-direction: row;
   padding: 10% 5%;
-  margin-top: -80px;
+
+  margin: 0 auto;
+  padding: 15%;
 }
 
-.info {
+.content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -20,13 +18,26 @@
   padding: 3%;
   text-align: center;
   color: black;
-  margin: 0 auto;
+  margin-bottom: 0 auto;
   align-content: center;
-  font-size: 20px;
+  font-size: 30px;
+  text-align: start;
+  margin-top: 120px;
 }
 
 h1 {
   text-align: center;
   text-decoration: underline;
   font-size: 40px;
+}
+
+.popup img {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  object-fit: contain;
+  height: 400px;
+  width: 500px;
+}
+
+.info {
+  padding: 5%;
 }
