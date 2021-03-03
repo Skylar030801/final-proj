@@ -1,19 +1,27 @@
 function admin() {
   let loginForm = document.getElementById("logForm");
-  let inputs = loginForm.getElementsByTagName("input");
-
-  let username = inputs[0].value;
-  let password = inputs[1].value;
-
-  let users;
-  fetch("https://pure-stream-15016.herokuapp.com/")
+  const inputs = loginForm.getElementsByTagName("input");
+  let user = {
+    fullname: inputs[0].value,
+    username: inputs[1].value,
+    email: inputs[2].value,
+    password: inputs[3].value,
+  };
+  console.log(user);
+  fetch("http://127.0.0.1:5000/add-new-user", {
+    method: "POST",
+    body: JSON.stringify(user),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  })
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
-      user = json;
-      console.log(password, username, user);
+      alert("user has been added");
+      // console.log(password, username, user);
 
-      let logged = user.filter((users) => {
+      let logged = json.filter((user) => {
         return user.username == username && user.password == password;
       });
 
