@@ -1,4 +1,4 @@
-function admin() {
+function register_user() {
   let loginForm = document.getElementById("logForm");
   const inputs = loginForm.getElementsByTagName("input");
   let user = {
@@ -8,7 +8,7 @@ function admin() {
     password: inputs[3].value,
   };
   console.log(user);
-  fetch("http://127.0.0.1:5000/add-new-user", {
+  fetch("http://127.0.0.1:5000/user-register/", {
     method: "POST",
     body: JSON.stringify(user),
     headers: {
@@ -26,7 +26,8 @@ function admin() {
       });
 
       if (logged.length >= 1) {
-        window.location.href = "./login-form.html";
+        window.location.href = "./index.html";
       }
-    });
+    })
+    .catch((err) => console.log(err));
 }
