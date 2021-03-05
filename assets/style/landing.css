@@ -23,3 +23,8 @@
     background-image: url("../images/back4\ \(1\).png");
   }
 }
+
+.login {
+  justify-content: center;
+  color: black;
+}

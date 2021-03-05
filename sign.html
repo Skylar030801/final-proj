@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/nav.css" />
+    <link rel="stylesheet" href="./index.html" />
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+    </nav>
+    <div class="login" id="login">
+      <h1>Register</h1>
+      <form
+        id="logForm"
+        onsubmit="event.preventDefault(); login_user();"
+        method="Post"
+      >
+        <label for="username">Username</label>
+        <input type="text" name="username" /><br />
+        <label for="password">Password</label>
+        <input type="text" name="password" /><br />
+        <button type="submit" value="Login">login</button>
+      </form>
+    </div>
+
+    <script src="./assets/images/scripts/login.js"></script>
+  </body>
+</html>

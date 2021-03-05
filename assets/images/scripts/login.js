@@ -1,6 +1,6 @@
 function register_user() {
-  let loginForm = document.getElementById("logForm");
-  const inputs = loginForm.getElementsByTagName("input");
+  let regForm = document.getElementById("regForm");
+  const inputs = regForm.getElementsByTagName("input");
   let user = {
     fullname: inputs[0].value,
     username: inputs[1].value,
@@ -21,13 +21,35 @@ function register_user() {
       alert("user has been added");
       // console.log(password, username, user);
 
-      let logged = json.filter((user) => {
+      window.location.href = "./index.html";
+    })
+    .catch((err) => console.log(err));
+}
+
+function login_user() {
+  let logForm = document.getElementById("login");
+  let inputs = logForm.getElementsByTagName("input");
+
+  let username = inputs[0].value;
+  let password = inputs[1].value;
+
+  fetch("http://127.0.0.1:5000/show-records/")
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+
+      loggedIn = json.filter((user) => {
         return user.username == username && user.password == password;
       });
 
-      if (logged.length >= 1) {
+      alert("logged in successfully");
+      console.log(json, loggedIn);
+
+      // logForm.requestFullscreen();
+      if (loggedIn.length >= 1) {
         window.location.href = "./index.html";
+      } else {
+        alert("Invalid");
       }
-    })
-    .catch((err) => console.log(err));
+    });
 }
