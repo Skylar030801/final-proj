@@ -1,0 +1,45 @@
+.cart {
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  font-size: 40px;
+  color: black;
+}
+
+#amount {
+  top: 25%;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  left: auto;
+  right: 6%;
+  z-index: 1;
+  position: absolute;
+  font-weight: bold;
+}
+
+#cart:hover {
+  color: teal;
+}
+
+#cartMenu {
+  display: flex;
+  top: 48px;
+  right: -100px;
+  position: fixed;
+  transition: all 0.3s cubic-bezier(0.32, -0.41, 0.54, 1.6);
+  width: 15vw;
+  z-index: 1000;
+  background: mediumaquamarine;
+  flex-direction: column;
+  padding: 5px 11px 5px 6px;
+}
+
+#cartMenu.show {
+  right: 0px;
+}
+
+#cartFont {
+  font-size: 10px;
+}

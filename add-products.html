@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      id="products"
+      onsubmit="event.preventDefault(); add_products()"
+      method="Post"
+    >
+      <label for="product-name">products</label>
+      <input type="text" name="Products" required /><br />
+      <label for="price">price</label>
+      <input type="text" name="price" required /><br />
+      <label for="description">description</label>
+      <input type="text" name="description" required /><br />
+      <label for="image">image</label>
+      <input type="text" name="image" required /><br />
+      <input type="submit" value="products" />
+    </form>
+
+    <script src="./assets/images/scripts/create.js"></script>
+  </body>
+</html>

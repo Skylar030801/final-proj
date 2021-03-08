@@ -21,7 +21,7 @@ function register_user() {
       alert("user has been added");
       // console.log(password, username, user);
 
-      window.location.href = "./index.html";
+      window.location.href = "./products.html";
     })
     .catch((err) => console.log(err));
 }
@@ -47,7 +47,7 @@ function login_user() {
 
       // logForm.requestFullscreen();
       if (loggedIn.length >= 1) {
-        window.location.href = "./index.html";
+        window.location.href = "./products.html";
       } else {
         alert("Invalid");
       }
