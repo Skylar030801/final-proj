@@ -3,7 +3,7 @@ function add_products() {
   const inputs = products.getElementsByTagName("input");
   let user = {
     product: inputs[0].value,
-    products: inputs[1].value,
+    price: inputs[1].value,
     description: inputs[2].value,
     image: inputs[3].value,
   };
