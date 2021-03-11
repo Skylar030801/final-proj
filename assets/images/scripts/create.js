@@ -8,7 +8,7 @@ function add_products() {
     image: inputs[3].value,
   };
   console.log(user);
-  fetch("http://127.0.0.1:5000/products/", {
+  fetch("http://127.0.0.1:5000/show-products/", {
     method: "POST",
     body: JSON.stringify(user),
     headers: {

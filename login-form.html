@@ -12,21 +12,31 @@
       <img src="./assets/images/logo.png" alt="Logo" class="logo" />
     </nav>
     <div class="register" id="reg">
-      <h1>Login</h1>
+      <h1 class="reg">REGISTER</h1>
       <form
         id="regForm"
         onsubmit="event.preventDefault(); register_user();"
         method="Post"
+        style="margin-top: 80px"
       >
         <label for="fullname">Full name</label>
         <input type="text" name="fullname" required /><br />
         <label for="username">Username</label>
         <input type="text" name="username" required /><br />
         <label for="email">Email</label>
-        <input type="email" name="email" required /><br />
+        <input
+          type="email"
+          name="email"
+          required
+          style="margin-left: 55px"
+        /><br />
         <label for="password">Password</label>
         <input type="text" name="password" required /><br />
-        <input type="submit" value="Register" />
+        <input
+          type="submit"
+          value="Register"
+          style="width: 100px; height: 30px; font-size: 20px"
+        />
       </form>
     </div>
 

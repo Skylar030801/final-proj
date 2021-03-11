@@ -47,9 +47,16 @@ function login_user() {
 
       // logForm.requestFullscreen();
       if (loggedIn.length >= 1) {
+        localStorage.setItem("user-logged", JSON.stringify(username, password));
         window.location.href = "./products.html";
       } else {
         alert("Invalid");
       }
     });
+}
+
+function out() {
+  localStorage.removeItem("user-logged");
+  alert("see you again");
+  window.location.href = "./index.html";
 }

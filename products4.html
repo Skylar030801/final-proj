@@ -6,85 +6,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/nav.css" />
     <link rel="stylesheet" href="./assets/style/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body>
-     <!-- Navigation Section -->
-     <nav class="navbar">
-        <img src="./assets/images/logo.png" alt="Logo" class="logo" />
-        <ul class="nav-links" id="nav-links">
-          <input type="text" placeholder="Search.." />
-          <li class="nav-link"><a href="./index.html">Home</a></li>
-          <li class="nav-link"><a href="./about.html">About</a></li>
-          <li class="nav-link"><a href="./products.html">Products</a></li>
-          <li class="nav-link"><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+ <!-- Navigation Section -->
+<nav class="navbar">
+  <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+  <ul class="nav-links" id="nav-links">
+    <input type="text" placeholder="Search.." />
+    <li class="nav-link"><a href="./index.html">Home</a></li>
+    <li class="nav-link"><a href="./about.html">About</a></li>
+    <li class="nav-link"><a href="./products.html">Products</a></li>
+    <li class="nav-link"><a href="./contact.html">Contact</a></li>
+  </ul>
+  <span class="hamburger" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </span>
+</nav>
 
-      <!-- Buttons to choose list or grid view -->
-    <div class="view">
-        <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
-        <div class="sub"><h2>SHOWING 4 OF 4</h2></div>
-        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-      </div>
+<!-- Buttons to choose list or grid view -->
+<div class="view">
+  <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+  <div class="sub"><h2>SHOWING 4 OF 4</h2></div>
+  <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="./assets/images/CBD.jpg" alt="CBD" class="CBD" />
+    <h3>STARTER KIT CBD – EXTRA STRENGTH</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/aria-kit.jpg" alt="aria-kit" class="aria-kit" />
+    <h3>STARTER KIT WITH ARIA DIFFUSER</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/kit-thieves.jpg" alt="kit-thieves" class="kit-thieves" />
+    <h3>STARTER KIT WITH THIEVES</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/CBD-KIT.jpg" alt="CBD-KIT" class="CBD-KIT" />
+    <h3>PREMIUM STARTER KIT CBD</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/lantern-kit.jpg" alt="lantern-kit" class="lantern-kit" />
+    <h3>KIT WITH CHARCOAL LANTERN DIFFUSER</h3>
+  </div>
+  <div class="grid-item">
+    <img
+    src="./assets/images/ningxia.jpg"
+    alt="ningxia"
+    class="ningxia"
+    />
+    <h3>STARTER KIT WITH NINGXIA</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/dessert-kit.jpg" alt="desert-kit" class="desert-kit" />
+    <h3>STARTER KIT WITH DESERT MIST DIFFUSER</h3>
+  </div>
+  <div class="grid-item">
+    <img
+    src="./assets/images/dewdrop-kit.jpg"
+    alt="dewdrop-kit"
+    class="dewdrop-kit"
+    />
+    <h3>STARTER KIT WITH DEWDROP DIFFUSER</h3>
+  </div>
+  <div class="grid-item">
+    <img src="./assets/images/basic-removebg-preview.png" alt="basic" class="basic" />
+    <h3>STARTER KIT "BASIC"</h3>
+  </div>
+</div>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="./products.html">1</a>
+  <a href="./products2.html">2</a>
+  <a href="./products3.html">3</a>
+  <a href="./products4.html">4</a>
+  <a href="#">&raquo;</a>
   
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="./assets/images/CBD.jpg" alt="CBD" class="CBD" />
-          <h3>STARTER KIT CBD – EXTRA STRENGTH</h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/aria-kit.jpg" alt="aria-kit" class="aria-kit" />
-          <h3>STARTER KIT WITH ARIA DIFFUSER</h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/kit-thieves.jpg" alt="kit-thieves" class="kit-thieves" />
-          <h3>STARTER KIT WITH THIEVES</h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/CBD-KIT.jpg" alt="CBD-KIT" class="CBD-KIT" />
-          <h3>PREMIUM STARTER KIT CBD</h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/lantern-kit.jpg" alt="lantern-kit" class="lantern-kit" />
-          <h3>KIT WITH CHARCOAL LANTERN DIFFUSER</h3>
-        </div>
-        <div class="grid-item">
-          <img
-            src="./assets/images/ningxia.jpg"
-            alt="ningxia"
-            class="ningxia"
-          />
-          <h3>STARTER KIT WITH NINGXIA
-        </h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/dessert-kit.jpg" alt="desert-kit" class="desert-kit" />
-          <h3>STARTER KIT WITH DESERT MIST DIFFUSER</h3>
-        </div>
-        <div class="grid-item">
-          <img
-            src="./assets/images/dewdrop-kit.jpg"
-            alt="dewdrop-kit"
-            class="dewdrop-kit"
-          />
-          <h3>STARTER KIT WITH DEWDROP DIFFUSER</h3>
-        </div>
-        <div class="grid-item">
-          <img src="./assets/images/basic-removebg-preview.png" alt="basic" class="basic" />
-          <h3>STARTER KIT "BASIC"</h3>
-        </div>
-      </div>
-  
-      <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="./products.html">1</a>
-        <a href="./products2.html">2</a>
-        <a href="./products3.html">3</a>
-        <a href="./products4.html">4</a>
-        
-        <a href="#">&raquo;</a>
-  
-        <script src="./assets/images/scripts/products.js"></script>
-    
+  <script src="./assets/images/scripts/products.js"></script>
 </body>
 </html>

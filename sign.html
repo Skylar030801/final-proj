@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/nav.css" />
     <link rel="stylesheet" href="./index.html" />
+    <link rel="stylesheet" href="./assets/style/sign.css" />
   </head>
   <body>
     <!-- Navigation Section -->
@@ -14,17 +15,24 @@
       <img src="./assets/images/logo.png" alt="Logo" class="logo" />
     </nav>
     <div class="login" id="login">
-      <h1>Register</h1>
+      <h1>login</h1>
       <form
         id="logForm"
         onsubmit="event.preventDefault(); login_user();"
         method="Post"
+        style="margin-top: 80px"
       >
         <label for="username">Username</label>
         <input type="text" name="username" /><br />
         <label for="password">Password</label>
         <input type="text" name="password" /><br />
-        <button type="submit" value="Login">login</button>
+        <button
+          type="submit"
+          value="Login"
+          style="width: 100px; height: 30px; font-size: 20px"
+        >
+          login
+        </button>
       </form>
     </div>
 
